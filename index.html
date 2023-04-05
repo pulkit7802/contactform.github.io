@@ -3,7 +3,14 @@
 <head>
  <title>Contact Form with Captcha using PHP and Bootstrap</title>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
- <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+ <script src="https://www.google.com/recaptcha/enterprise.js?render=6Le_e14lAAAAAH-z8SPfzsBEycHl5R_z1eL1A6KT"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6Le_e14lAAAAAH-z8SPfzsBEycHl5R_z1eL1A6KT', {action: 'login'}).then(function(token) {
+       ...
+    });
+});
+</script>
 </head>
 <body>
  <div class="container">
