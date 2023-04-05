@@ -1,6 +1,6 @@
 <?php
 // Replace YOUR_SECRET_KEY with your Google reCaptcha secret key
-$secret = "";
+$secret = "6Le_e14lAAAAAGvWQ0Mb6U_tfWJaY5j12AQJDObk";
 $response = $_POST["g-recaptcha-response"];
 
 $url = "https://www.google.com/recaptcha/api/siteverify";
@@ -25,7 +25,7 @@ if ($verify->success) {
  $name = $_POST['name'];
  $email = $_POST['email'];
  $message = $_POST['message'];
- $to = "pulkitkamsal.00@gmail.com";
+ $to = "youremail@example.com";
  $subject = "New Contact Form Submission";
  $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
  $headers = "From: $email";
